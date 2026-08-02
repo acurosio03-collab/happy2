@@ -1,0 +1,484 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    min-height:100vh;
+    overflow-x:hidden;
+
+    font-family:'Poppins',Arial,sans-serif;
+
+    text-align:center;
+    color:white;
+
+    background:
+    linear-gradient(
+    135deg,
+    #ff758c,
+    #ff7eb3,
+    #8e2de2
+    );
+
+}
+
+
+/* CONTAINER */
+
+.container{
+
+    padding:40px 20px;
+    position:relative;
+    z-index:2;
+
+}
+
+
+
+/* JUDUL */
+
+h1{
+
+    font-size:45px;
+
+    text-shadow:
+    0 0 10px white,
+    0 0 30px #ff00cc;
+
+    animation:judul 2s infinite alternate;
+
+}
+
+
+h2{
+
+    margin:20px;
+
+}
+
+
+h2 span{
+
+    color:#ffe066;
+
+}
+
+
+
+/* FOTO */
+
+.photo img{
+
+    width:230px;
+    height:230px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:8px solid white;
+
+    box-shadow:
+    0 0 20px white,
+    0 0 60px #ff00cc;
+
+
+    animation:foto 3s infinite alternate;
+
+}
+
+
+
+
+/* UCAPAN */
+
+.text{
+
+    max-width:500px;
+
+    margin:30px auto;
+
+    font-size:20px;
+
+    line-height:1.6;
+
+}
+
+
+
+
+/* KUE */
+
+.cake{
+
+    margin:40px auto;
+
+}
+
+
+.cake-bottom,
+.cake-mid,
+.cake-top{
+
+    margin:auto;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 10px 20px rgba(0,0,0,.3);
+
+}
+
+
+.cake-bottom{
+
+    width:200px;
+    height:60px;
+
+    background:#ff3366;
+
+}
+
+
+.cake-mid{
+
+    width:160px;
+    height:50px;
+
+    background:#ff6699;
+
+}
+
+
+.cake-top{
+
+    width:120px;
+    height:45px;
+
+    background:#ffc2d1;
+
+}
+
+
+.candle{
+
+    width:15px;
+    height:60px;
+
+    background:white;
+
+    margin:auto;
+
+}
+
+
+.flame{
+
+    width:25px;
+    height:25px;
+
+    background:orange;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    animation:api .5s infinite alternate;
+
+}
+
+
+
+/* COUNTDOWN */
+
+.countdown{
+
+    margin:30px auto;
+
+    max-width:420px;
+
+    padding:25px;
+
+    border-radius:25px;
+
+
+    background:
+    rgba(255,255,255,.2);
+
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+
+    0 0 30px rgba(255,255,255,.3);
+
+}
+
+
+#timer{
+
+    margin-top:15px;
+
+    font-size:25px;
+
+    font-weight:bold;
+
+}
+
+
+
+/* TOMBOL */
+
+button,
+.wa{
+
+
+    display:inline-block;
+
+    margin:15px;
+
+    padding:15px 35px;
+
+
+    border-radius:50px;
+
+    border:none;
+
+    cursor:pointer;
+
+
+    color:white;
+
+    background:#ff006e;
+
+
+    font-size:18px;
+
+    text-decoration:none;
+
+
+    box-shadow:
+
+    0 0 20px #ff006e;
+
+
+    transition:.3s;
+
+}
+
+
+
+button:hover,
+.wa:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+
+/* KADO */
+
+.gift-box{
+
+    width:130px;
+
+    height:110px;
+
+    margin:40px auto;
+
+    position:relative;
+
+    cursor:pointer;
+
+}
+
+
+.box{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:130px;
+
+    height:80px;
+
+    background:#ff006e;
+
+    border-radius:10px;
+
+    box-shadow:
+
+    0 0 30px #ff006e;
+
+}
+
+
+
+.lid{
+
+    position:absolute;
+
+    top:0;
+
+    left:-5px;
+
+
+    width:140px;
+
+    height:25px;
+
+
+    background:#ffd166;
+
+
+    border-radius:10px;
+
+    transition:1s;
+
+    z-index:3;
+
+}
+
+
+
+.gift-box.open .lid{
+
+    transform:
+
+    translateY(-80px)
+    rotate(-25deg);
+
+}
+
+
+
+
+/* HATI TERBANG */
+
+.heart{
+
+    position:fixed;
+
+    bottom:-30px;
+
+    font-size:25px;
+
+    animation:naik 5s linear forwards;
+
+}
+
+
+
+/* ANIMASI */
+
+
+@keyframes judul{
+
+from{
+
+transform:scale(1);
+
+}
+
+to{
+
+transform:scale(1.1);
+
+}
+
+}
+
+
+
+@keyframes foto{
+
+from{
+
+transform:rotate(-5deg);
+
+}
+
+to{
+
+transform:rotate(5deg);
+
+}
+
+}
+
+
+
+@keyframes api{
+
+from{
+
+transform:scale(1);
+
+}
+
+to{
+
+transform:scale(1.5);
+
+}
+
+}
+
+
+
+@keyframes naik{
+
+0%{
+
+transform:translateY(0);
+
+opacity:1;
+
+}
+
+
+100%{
+
+transform:translateY(-100vh);
+
+opacity:0;
+
+}
+
+}
+
+
+
+
+/* HP */
+
+@media(max-width:600px){
+
+h1{
+
+font-size:35px;
+
+}
+
+
+.photo img{
+
+width:170px;
+height:170px;
+
+}
+
+
+.text{
+
+font-size:17px;
+
+}
+
+
+}
