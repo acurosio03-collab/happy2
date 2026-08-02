@@ -74,3 +74,14 @@ function openGift(){
     alert("🎁 Kejutan dibuka! Selamat ulang tahun ❤️");
 
 }
+// ===============================
+// MUSIK ULANG TAHUN
+// ===============================
+
+function playMusic(){
+
+    let music = document.getElementById("music");
+
+    music.play();
+
+}
