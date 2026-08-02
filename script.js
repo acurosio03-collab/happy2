@@ -70,7 +70,7 @@ const countdown = setInterval(function(){
         clearInterval(countdown);
 
         document.getElementById("timer").innerHTML =
-        "🎉 HAPPY BIRTHDAY 🎉";
+        "🎉 HAPPY BIRTHDAY SAYANGKU HAHA SEMOGAA PANJANG UMUR NYA YAA SEMOGA REZEKI NYA LANCAR TERUS JAGA KESEHATAN NYA OKEI 🎉";
 
         return;
     }
